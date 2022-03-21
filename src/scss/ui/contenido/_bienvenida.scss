@@ -2,7 +2,9 @@
 @use 'base/variables' as v;
 .bienvenida {
     text-align: center;
-    &__heading {}
+    &__heading {
+        @include m.headingCursiva;
+    }
     &__texto {
         font-size: 2.6rem;
         color: v.$gris;
